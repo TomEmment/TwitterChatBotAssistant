@@ -1,0 +1,128 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>         <random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you! </li>
+            <li> Hi! How are you? </li>
+            <li> Hi! What is your name? </li>
+         </random></template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai><random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you! </li>
+            <li> Hi! How are you? </li>
+            <li> Hi! What is your name? </li>
+         </random></srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai><random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you! </li>
+            <li> Hi! How are you? </li>
+            <li> Hi! What is your name? </li>
+         </random></srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai><random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you! </li>
+            <li> Hi! How are you? </li>
+            <li> Hi! What is your name? </li>
+         </random></srai></template> </category>
+    
+<category>
+      <pattern>I AM *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>  
+</category> 
+
+<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         <set name="name"><star/></set> is a nice name.
+      </template>
+</category>
+    
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>
+     Your name is <get name="name"/>.
+  </template>
+</category>    
+    
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you <get name = "name"/>.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template>#0$BYE</template></category>
+
+<category><pattern> EXIT </pattern>
+  <template>#0$BYE <get name = "name"/></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome. <get name = "name"/></template></category>
+    
+<category> <pattern> WILL YOU MARRY ME </pattern>
+  <template>Its not you its me, but theres plenty more fish in the sea!</template></category>
+    
+<category> <pattern> I LOVE YOU </pattern>
+  <template>Im Flattered <get name = "name"/>, but our components are imcompatible, it wouldnt work.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<!-- Twitter API -->
+<category><pattern> WHAT DID * TWEET</pattern>
+  <template>#2$<star/></template></category>
+
+<category><pattern> MOST RECENT TWEET BY *</pattern>
+  <template>#2$<star/></template></category>
+
+<category><pattern> MOST RECENT * TWEET</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern> FIND * RECENT TWEET</pattern>
+  <template>#2$<star/></template></category>
+
+<category><pattern> FIND TWEETS CONTAINING * </pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern> SEARCH FOR *</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern> FIND ME TWEETS CONTANINING *</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern> LOOK UP TWEETS WITH *</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern>I WANT TO SEE TWEETS WITH *</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern>SHOW ME * TWEETS</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern>FIND TWEETS ABOUT *</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern>FIND * TWEETS</pattern>
+  <template>#1$<star/></template></category>
+    
+<category><pattern>FIND TWEETS CONTAINING *</pattern>
+  <template>#1$<star/></template></category> 
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>

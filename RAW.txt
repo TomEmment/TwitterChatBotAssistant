@@ -1,0 +1,46 @@
+Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Users\Thoma\OneDrive\Documents\Projects\Python\Articial intellegence\Coursework Part 1\CourseworkPart1.py
+Loading CourseworkPart1.xml...done (0.00 seconds)
+Kernel bootstrap completed in 0.03 seconds
+Welcome to this twitter chat bot. Please feel free to ask for me to search for tweets or people for you
+
+
+Enter your Message: Hello
+Hello! How are you?
+Enter your Message: Im good thanks you?
+Im good thanks
+Enter your Message: what are you
+I am a twitter bot, I can look up and assist you when looking for tweets
+
+Enter your Message: what did obama tweet
+Most recent tweet by  obama :  Thank you Chiney Nneka and all of the athletes who are using their platforms and helping people vote in this election
+Enter your Message: what tweet obama
+Most recent tweet by  obama:  Thank you Chiney, Nneka, and all of the athletes who are using their platforms and helping people vote in this elecion
+Enter your Message: can find ellen tweet
+Most recent tweet by  ellen :  If you voted absentee, check the status of your ballot NOW! If it was rejected, you may still have a chance to correct.
+
+
+Enter your Message: most recent tweet by Justin Timberlake
+I couldnt find that user
+Is it any of the following?
+Justin Timberlake
+shrinersopen
+JustinTimberlakePerú
+Justin Timberlake Brasil
+->Justin Timberlake
+Most recent tweet by  Justin Timberlake :  Over 91.6 million nationwide requested a mail in ballot to vote More mail in ballots means more time spent counting
+
+
+Enter your Message: find me tweets containing politics
+Most recent tweet by  13850422 :  b'Former New Jersey Gov. Chris Christie called on President Trump to provide evidence for his claims made in the Whitehouse https://t.co/2lv6sTCYnv'
+Enter your Message: Look up tweets with football
+My search for  football  found the following most recent tweet:  Dani Alves is one of the most decorated players in football history He has seen so much success in his career
+
+
+Enter your Message: Am I facing north?
+I dont understand, could you try rephrasing the question?
+
+Enter your Message: Bye
+Bye! Nice talking to you.
